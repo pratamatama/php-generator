@@ -1,0 +1,21 @@
+{
+    "name": "pratamatama/laravel-generator",
+    "description": "A set of useful generator for Laravel projects",
+    "type": "library",
+    "require": {
+        "illuminate/support": "11.x-dev"
+    },
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Pratamatama\\LaravelGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Donny Pratama",
+            "email": "donnypratama1024@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
