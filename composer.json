@@ -1,21 +1,31 @@
 {
-    "name": "pratamatama/laravel-generator",
-    "description": "A set of useful generator for Laravel projects",
-    "type": "library",
-    "require": {
-        "illuminate/support": "11.x-dev"
-    },
-    "license": "GPL",
-    "autoload": {
-        "psr-4": {
-            "Pratamatama\\LaravelGenerator\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Donny Pratama",
-            "email": "donnypratama1024@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev"
+  "name": "pratamatama/php-generator",
+  "description": "A set of useful generator for PHP projects",
+  "type": "library",
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^4.2",
+    "phpoffice/phpspreadsheet": "^1.28"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Pratamatama\\PhpGenerator\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "role": "Developer",
+      "name": "Donny Pratama",
+      "email": "donnypratama1024@gmail.com",
+      "homepage": "https://7U124.vercel.app"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "optimize-autoloader": true
+  }
 }
