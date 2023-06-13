@@ -10,7 +10,9 @@ Install the package with Composer:
 
 ## Official Documentation
 
-Coming soon.
+For now, there is no docs available. But you can visit and clone the demo repository to get the idea what this package does and how to use it.
+
+[View Demo Repository](https://github.com/pratamatama/custom-report)
 
 ## Contributing
 
