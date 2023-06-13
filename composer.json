@@ -21,7 +21,7 @@
       "homepage": "https://7U124.vercel.app"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "config": {
     "sort-packages": true,
