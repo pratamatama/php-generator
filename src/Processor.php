@@ -19,7 +19,7 @@ class Processor
 
     public function setData(array | Collection $data)
     {
-        $this->data = is_array($data) ? Collection::wrap($data) : $data;
+        $this->data = is_array($data) ? Collection::wrap(...$data) : $data;
         $this->modifiedData = $this->data;
         return $this;
     }
