@@ -4,6 +4,7 @@ namespace Pratamatama\PhpGenerator;
 
 use DOMDocument;
 use DOMNode;
+use Illuminate\support\Facades\View;
 
 class DOMParser extends PreProcessor
 {
@@ -19,7 +20,7 @@ class DOMParser extends PreProcessor
 
     protected function loadDOM(string $fileName)
     {
-        $html = view($fileName)->render();
+        $html = View::make($fileName)->render();
         $this->dom = new DOMDocument();
         $this->dom->loadHTML($html);
 

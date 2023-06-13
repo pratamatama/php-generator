@@ -19,7 +19,7 @@ class PreProcessor
 
     public function setData(array | Collection $data)
     {
-        $this->data = is_array($data) ? collect($data) : $data;
+        $this->data = is_array($data) ? Collection::wrap($data) : $data;
         $this->modifiedData = $this->data;
         return $this;
     }
@@ -39,7 +39,7 @@ class PreProcessor
 
         if (!is_null($modifier) && is_callable($modifier)) {
             $this->modifiedData = $this->modifiedData->map(function ($i) use ($modifier) {
-                $modified = $modifier(collect($i));
+                $modified = $modifier(Collection::wrap($i));
                 return $modified;
             });
             return $this;
@@ -57,7 +57,7 @@ class PreProcessor
                 $this->modifiedData = $this->modifiedData->only($this->renderKeys);
             } else {
                 $this->modifiedData = $this->modifiedData->map(function ($d) {
-                    $item = collect($d)->only($this->renderKeys);
+                    $item = Collection::wrap($d)->only($this->renderKeys);
                     return $item;
                 });
             }
