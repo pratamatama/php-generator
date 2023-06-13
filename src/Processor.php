@@ -39,7 +39,7 @@ class Processor
 
         if (!is_null($modifier) && is_callable($modifier)) {
             $this->modifiedData = $this->modifiedData->map(function ($i) use ($modifier) {
-                $modified = $modifier(Collection::wrap($i));
+                $modified = $modifier($i);
                 return $modified;
             });
             return $this;
