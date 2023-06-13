@@ -10,9 +10,6 @@
   },
   "license": "MIT",
   "autoload": {
-    "files": [
-      "vendor/laravel/helpers/src/helpers.php"
-    ],
     "psr-4": {
       "Pratamatama\\PhpGenerator\\": "src/"
     }
