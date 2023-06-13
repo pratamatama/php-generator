@@ -5,7 +5,7 @@ namespace Pratamatama\PhpGenerator;
 use Illuminate\Support\Collection;
 
 
-class PreProcessor
+class Processor
 {
     protected Collection $data;
 

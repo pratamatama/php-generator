@@ -6,7 +6,7 @@ use DOMDocument;
 use DOMNode;
 use Illuminate\support\Facades\View;
 
-class DOMParser extends PreProcessor
+class DOMParser extends Processor
 {
     protected string $title = 'XLS Report Sample';
 
