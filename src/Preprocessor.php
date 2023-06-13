@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Utilities;
+namespace Pratamatama\PhpGenerator;
 
-use Exception;
 use Illuminate\Support\Collection;
 
 

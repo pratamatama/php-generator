@@ -4,11 +4,15 @@
   "type": "library",
   "require": {
     "php": "^8.0",
-    "illuminate/support": "^4.2",
+    "illuminate/support": "^10.0",
+    "laravel/helpers": "^1.6",
     "phpoffice/phpspreadsheet": "^1.28"
   },
   "license": "MIT",
   "autoload": {
+    "files": [
+      "vendor/laravel/helpers/src/helpers.php"
+    ],
     "psr-4": {
       "Pratamatama\\PhpGenerator\\": "src/"
     }

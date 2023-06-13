@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Utilities;
+namespace Pratamatama\PhpGenerator;
 
 use DOMDocument;
 use DOMNode;
